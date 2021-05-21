@@ -1,0 +1,49 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+.detail {
+  padding: 1rem 2rem 2.5rem;
+  margin: 3rem auto;
+  margin-left: 14rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  background-color: #eee;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+  }
+  &-link {
+    width: 100%;
+    text-decoration: none;
+    margin-left: 0;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    color: white;
+    background-color: blue;
+    margin-top: 4rem;
+  }
+  &-desc {
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem 0;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #ccc;
+  }
+  &-desc {
+    margin-left: 4rem;
+  }
+  &-value {
+    margin-left: auto;
+  }
+}

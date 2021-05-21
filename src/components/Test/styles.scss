@@ -1,0 +1,31 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.table {
+  &-image {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &-left {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  &-name {
+    margin-left: 1rem;
+  }
+  &-row {
+    background-color: red;
+    margin-top: 1rem;
+  }
+  &-head {
+    background-color: yellow;
+    margin-bottom: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

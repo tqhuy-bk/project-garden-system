@@ -1,0 +1,70 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.garden {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 1px solid #e4f5ff;
+  max-width: 70%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  &-image {
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 45%;
+  }
+  &-special {
+    position: relative;
+    &::after {
+      content: "3";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: white;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+      background-color: orange;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+  &-info {
+    margin-left: 2rem;
+  }
+  &-name {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  &-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &-button {
+    padding: 0.5rem 2rem;
+    width: 100%;
+    color: blue;
+    border: 1px solid blue;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 0.5rem;
+    margin-bottom: 0;
+    transform: all 0.25 linear;
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+  }
+}
